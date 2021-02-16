@@ -28,8 +28,10 @@ function load_fromPlaceHolder() {
                         </div>
                     </div>`;  // same code as previous with few update
                 });
-            loader2.classList.remove("active")
-
+            //setTimeout ??
+            setTimeout(()=> {
+                loader2.classList.remove("active")
+            }, 1000)
             postDiv3.innerHTML = output;
         })
         .catch(function(err) {     
@@ -67,7 +69,9 @@ function loadDataNew() {
                     </div>
                 </div>`;  // same code as previous with few update
             });
-        loader2.classList.remove("active")
+            setTimeout(()=> {
+                loader2.classList.remove("active")
+            }, 1000)
         postDiv3.innerHTML = output;
     })
 
@@ -110,7 +114,9 @@ document.addEventListener("keyup", (e) => {
                 </div>`;;
             }
         });
-        loader2.classList.remove("active")
+        setTimeout(()=> {
+            loader2.classList.remove("active")
+        }, 1000)
 
         postDiv3.innerHTML = result;
     }).catch((e) => {console.log('Try Again')});
