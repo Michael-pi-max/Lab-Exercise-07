@@ -120,7 +120,5 @@ document.addEventListener("keyup", (e) => {
 
         postDiv3.innerHTML = result;
     }).catch((e) => {console.log('Try Again')});
-    // const newses = load_fromPlaceHolder_new.map((news) => {
-    //     return 
-    // })
+    
 })
